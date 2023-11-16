@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html >
+<head>
+  
+  <title>Assignment</title>
+</head>
+<body>
+
+  <input  type="text";  id="nameInput"; placeholder="Enter your name";>
+  <button  onclick="storeAndCheckName()"> input </button>
+  <script>
+
+
+ const eunice = function([...args]){
+  if (args.includes('-') || args.length > 10){
+    alert('Name cannot be accepted');
+    
+    }
+    else{
+      alert('name accepted');
+  }
+ }
+
+ function storeAndCheckName(){
+  const name = document.getElementById('nameInput').value;
+  console.log('name stored', name);
+  eunice(name);
+ }
+
+  </script>
+
+
+</body>
+</html>
